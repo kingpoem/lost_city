@@ -1,0 +1,63 @@
+site_name: lost-city
+site_description: 失落之城
+site_url: https://kingpoem.github.io/lost_city
+
+theme:
+  name: "material"
+  language: zh
+  font: false
+  features:
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+    - announce.dismiss
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/theme-light-dark
+        name: Automatically Switch ui mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: latte
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: macchiato
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+repo_name: kingpoem/lost_city
+repo_url: https://kingpoem.github.io/lost_city
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://kingpoem.github.io/lost_city
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - pymdownx.details
+  - attr_list
+  - admonition
+
+extra_css:
+  - css/font.css
+  - css/scheme.css
+  - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
+  - https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap       
